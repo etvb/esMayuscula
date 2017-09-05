@@ -1,21 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pats.pkg21.pkg3.esmayor;
 
-/**
- *
- * @author edgardo
- */
+import javax.swing.JOptionPane;
+
+
 public class PATS213EsMayor {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+       
+        char letra;
+        //chartAt(0) te captura el primer caracter de un string
+        letra = JOptionPane.showInputDialog("Ingresa una letra").charAt(0);
+        
+        if(Character.isUpperCase(letra)){
+            JOptionPane.showMessageDialog(null,"Es mayúscula" );
+        }else{
+            JOptionPane.showMessageDialog(null, "es minuscula");
+        }
+        
     }
     
 }
